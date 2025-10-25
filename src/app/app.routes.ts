@@ -10,7 +10,7 @@ export const routes: Routes = [
     {path:'weather',component:Weather},
     {path:'city',component:City},
     {path:'country',component:Country},
-    {path:'country-population/id',component:CountryPopulation}
+    {path:'country-population/:id',component:CountryPopulation}
 
 ];
 
