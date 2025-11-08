@@ -11,7 +11,7 @@
   </thead>
 
   <tbody>
-    @for (country of countries; track country.id) {
+    @for (country of (countries$| async); track country.id) {
       <tr>
         <td>
           <a [routerLink]="['/country-population', country.id]">
