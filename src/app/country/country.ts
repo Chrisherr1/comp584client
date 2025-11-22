@@ -15,9 +15,7 @@ import { AsyncPipe } from '@angular/common';
 export class Country {
 
     countries$: Observable<CountryData[]>;
-
     constructor(http: HttpClient) {
-
     this.countries$ = http.get<CountryData[]>(environment.apiUrl + "api/Countries/")
     
     }
